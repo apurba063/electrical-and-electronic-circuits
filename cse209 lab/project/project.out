@@ -1,0 +1,109 @@
+
+**** 09/26/20 11:27:49 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\User\Desktop\project\project.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Sat Sep 26 11:27:48 2020
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "project.net"
+
+**** INCLUDING project.net ****
+* Schematics Netlist *
+
+
+
+V_V1         A 0 10V
+R_R1         B A  2000  
+R_R2         C B  800  
+R_R3         0 C  1200  
+
+**** RESUMING project.cir ****
+.INC "project.als"
+
+
+
+**** INCLUDING project.als ****
+* Schematics Aliases *
+
+.ALIASES
+V_V1            V1(+=A -=0 )
+R_R1            R1(1=B 2=A )
+R_R2            R2(1=C 2=B )
+R_R3            R3(1=0 2=C )
+_    _(A=A)
+_    _(B=B)
+_    _(C=C)
+.ENDALIASES
+
+
+**** RESUMING project.cir ****
+.probe
+
+
+.END
+
+**** 09/26/20 11:27:49 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\User\Desktop\project\project.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    A)   10.0000  (    B)    5.0000  (    C)    3.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.500E-03
+
+    TOTAL POWER DISSIPATION   2.50E-02  WATTS
+
+
+**** 09/26/20 11:27:49 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\User\Desktop\project\project.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+

@@ -1,0 +1,23 @@
+* C:\Users\User\Desktop\lab report (group-4)\lab251 5 2nd.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Sat Jan 16 03:22:00 2021
+
+
+
+** Analysis setup **
+.tran 0.5m 4m
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "lab251 5 2nd.net"
+.INC "lab251 5 2nd.als"
+
+
+.probe
+
+
+.END

@@ -1,0 +1,8 @@
+* Schematics Netlist *
+
+
+
+V_V1         A 0 10V
+R_R1         B A  2000  
+R_R2         C B  800  
+R_R3         0 C  1200  

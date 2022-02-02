@@ -1,0 +1,9 @@
+* Schematics Netlist *
+
+
+
+R_R1         $N_0002 $N_0001  5  
+R_R3         0 $N_0001  5  
+R_R2         $N_0001 $N_0003  10  
+V_E         $N_0002 0 10V
+R_R10         0 $N_0003  {RVAR}  

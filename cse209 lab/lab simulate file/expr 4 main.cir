@@ -1,0 +1,22 @@
+* C:\Users\User\Desktop\lab simulate file\expr 4 main.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Sat Sep 26 11:34:34 2020
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "expr 4 main.net"
+.INC "expr 4 main.als"
+
+
+.probe
+
+
+.END

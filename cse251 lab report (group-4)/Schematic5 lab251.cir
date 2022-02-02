@@ -1,0 +1,23 @@
+* C:\Users\User\Desktop\lab report (group-4)\Schematic5 lab251.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Fri Jan 15 21:13:58 2021
+
+
+
+** Analysis setup **
+.tran 0.5m 4m
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic5 lab251.net"
+.INC "Schematic5 lab251.als"
+
+
+.probe
+
+
+.END

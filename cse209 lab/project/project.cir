@@ -1,0 +1,22 @@
+* C:\Users\User\Desktop\project\project.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Sat Sep 26 11:27:48 2020
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "project.net"
+.INC "project.als"
+
+
+.probe
+
+
+.END

@@ -1,0 +1,22 @@
+* C:\Users\User\Desktop\lab simulate file\exp 02.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Sat Sep 26 11:29:35 2020
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "exp 02.net"
+.INC "exp 02.als"
+
+
+.probe
+
+
+.END

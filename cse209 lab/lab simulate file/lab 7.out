@@ -1,0 +1,112 @@
+
+**** 09/26/20 23:34:48 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\User\Desktop\lab simulate file\lab 7.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Sat Sep 26 23:34:43 2020
+
+
+.PARAM         RVAR=10 
+
+** Analysis setup **
+.DC LIN PARAM RVAR 1 20 0.1 
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "lab 7.net"
+
+**** INCLUDING "lab 7.net" ****
+* Schematics Netlist *
+
+
+
+R_R1         $N_0002 $N_0001  5  
+R_R3         0 $N_0001  5  
+R_R2         $N_0001 $N_0003  10  
+V_E         $N_0002 0 10V
+R_R10         0 $N_0003  {RVAR}  
+
+**** RESUMING "lab 7.cir" ****
+.INC "lab 7.als"
+
+
+
+**** INCLUDING "lab 7.als" ****
+* Schematics Aliases *
+
+.ALIASES
+R_R1            R1(1=$N_0002 2=$N_0001 )
+R_R3            R3(1=0 2=$N_0001 )
+R_R2            R2(1=$N_0001 2=$N_0003 )
+V_E             E(+=$N_0002 -=0 )
+R_R10           R10(1=0 2=$N_0003 )
+.ENDALIASES
+
+
+**** RESUMING "lab 7.cir" ****
+.probe
+
+
+.END
+
+**** 09/26/20 23:34:48 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\User\Desktop\lab simulate file\lab 7.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    4.4444                   ($N_0002)   10.0000                       
+
+($N_0003)    2.2222                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_E         -1.111E+00
+
+    TOTAL POWER DISSIPATION   1.11E+01  WATTS
+
+
+**** 09/26/20 23:34:48 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\User\Desktop\lab simulate file\lab 7.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .05
+

@@ -1,0 +1,11 @@
+* Schematics Netlist *
+
+
+
+X_U1         0 $N_0001 $N_0002 $N_0003 $N_0004 uA741
+C_C1         $N_0001 $N_0004  0.1u  
+R_R1         $N_0007 $N_0001  1.7k  
+V_V8         0 $N_0003 5V
+V_V7         $N_0002 0 5V
+V_Vs         $N_0007 0 DC 0V AC 1V
++PULSE -2V 2v 0.001n 0.1n 0.1n 0.5m 1m
